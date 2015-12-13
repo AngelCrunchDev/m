@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="keywords" content="{% block keywords %}{% endblock %}"/>
+    <meta name="description" content="{% block description %}{% endblock %}"/>
+    <meta name="robots" content="all"/>
+    <meta name="copyright" content="天使汇"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="author" content="http://m.angelcrunch.com" />
+    <meta name="revisit-after"  content="1 days" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="telephone=yes" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+    <link rel="Bookmark" href="/favicon.ico" />
+    {% block style %}<link href="/css/base.css" rel="stylesheet"/>{% endblock %}
+</head>
+<body>
+{% block content %}{% endblock %}
+</body>
+{% block script %}<script src="http://dn-acac.qbox.me/jquery-2.1.4.min.js"></script>
+<script src="http://dn-acac.qbox.me/mobile/public/jquery-cookie.js"></script>{% endblock %}
+{% block analysis %}<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?152c0c83060843fb42c0fceb19e5327a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>{% endblock %}
+</html>
