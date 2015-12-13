@@ -1,0 +1,50 @@
+{% extends './../template/layout.html' %}
+
+{% block title %}{$title$}{%endblock%}
+
+{% block keywords %}{$keywords$}{% endblock %}
+
+{% block description %}{$description$}{% endblock %}
+
+{% block style %}{% parent %}
+<link href="/css/temp/state_pages.css" rel="stylesheet" />{%endblock%}
+
+{% block content %}<div class="details">
+    <div id="header" class="head">
+        <div class="logo ci-link" data-href="/"></div>
+    </div>
+    <div class="success-desc">
+        <div class="icon"><img src="http://dn-acac.qbox.me/mobile/public/success_cross.png" /></div>
+        <h1>成功提交投资人申请</h1>
+        <p>我们将在1个工作日内完成您投资人身份的审核，并及时电话与您联系。</p>
+    </div>
+    <div class="control-module">
+        <p>接下来您可以:</p>
+        <div class="btn-module">
+            <a class="btn black small-font" href="tel:010-50980657">电话联系审核部门，加速审核</a>
+        </div>
+    </div>
+    <div class="download-module">
+        <p>下载客户端，掌握投资大咖最新投资动态:</p>
+        <ul>
+            <li class="android wechat2browser" data-href="//angelcrunch.com/app">
+                <p>安卓用户直接下载</p>
+                <h1>APK文件</h1>
+            </li>
+            <li class="ios wechat2browser" data-href="//angelcrunch.com/app">
+                <p>苹果用户下载请去</p>
+                <h1>AppStore</h1>
+            </li>
+        </ul>
+    </div>
+    <div class="banner-footer">
+        <p>AngelCrunch.com</p>
+        <p>天使汇 - 让靠谱的项目找到靠谱的钱</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}{% parent %}
+<script src="/js/old/angelcrunch.jq.c.js"></script>
+{% endblock %}
+{% block analysis %}{% parent %}{% endblock %}

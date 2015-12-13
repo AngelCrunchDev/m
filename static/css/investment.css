@@ -1,0 +1,299 @@
+/*融资信息展示*/
+.value-info{
+    width: 100%;
+    height: 105px;
+    border-top: 2px solid #fff;
+    padding: 0 5%;
+}
+.value-info>div{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.value-info .before{
+    border-right:1px solid #fff ;
+}
+.value-info .before>div{
+    text-align: center;
+    position: absolute;
+}
+.value-info .before .icon-container{
+    right: 105px;
+    top:0;
+    width: 50px;
+    height: 100%;
+    margin-right: 3%;
+}
+.value-info .before .icon-container i{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url("https://dn-acac.qbox.me/fince_icon_10.png") no-repeat;
+    background-size: auto 50px;
+    margin-top: 30px;
+}
+.value-info .before .text-container{
+    right: 0;
+    top: 0;
+    width: 95px;
+    height: 100%;
+    margin-right: 5%;
+}
+.value-info .before .text-container p{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.value-info .before .text-container .amount{
+    font-size: 22px;
+    margin-top: 37px;
+    white-space: nowrap;
+}
+.value-info .before .text-container .desc{
+    font-size: 14px;
+    color: #666;
+    margin-top: 2px;
+    white-space: nowrap;
+}
+
+.value-info .percent{
+    border-left: 1px solid #fff;
+}
+.value-info .percent>div{
+    text-align: center;
+    position: absolute;
+}
+.value-info .percent .icon-container{
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    margin-left: 5%;
+}
+.value-info .percent .icon-container i{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url("https://dn-acac.qbox.me/fince_icon_05.png") no-repeat;
+    background-size: auto 50px;
+    margin-top: 30px;
+}
+.value-info .percent .text-container{
+    top: 0;
+    left: 55px;
+    width: 95px;
+    height: 100%;
+    margin-left: 3%;
+}
+.value-info .percent .text-container p {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.value-info .percent .text-container .amount{
+    font-size: 22px;
+    margin-top: 37px;
+}
+.value-info .percent .text-container .desc{
+    font-size: 14px;
+    color: #666;
+    margin-top: 2px;
+}
+
+/*投资选择*/
+.choose-bar{
+    width: 100%;
+    padding: 0 5%;
+}
+.choose-bar-big{
+    height: 150px;
+}
+.choose-bar-small{
+    height: 120px;
+}
+.choose-bar .title{
+    font-size: 16px;
+    text-align: left;
+    line-height: 40px;
+}
+.choose-bar .bar-body{
+    height: 45px;
+    width: 100%;
+    position: relative;
+}
+.choose-bar .handle{
+    display: inline-block;
+    height: 100%;
+    width: 45px;
+    background: #3b70e1;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.choose-bar .handle:active{
+    background:#405DD0;
+}
+.choose-bar .min{
+    float: left;
+    font-size: 30px;
+    padding-top: 7px;
+}
+.choose-bar .add{
+    float: right;
+    font-size: 25px;
+    padding-top: 9px;
+}
+.choose-bar .sta{
+    position: absolute;
+    display: block;
+    height: 100%;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    background: #eee;
+}
+.choose-bar .desc{
+    width: 100%;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    line-height: 40px;
+}
+
+/*计算结果*/
+.calculate-result{
+    width: 90%;
+    height: 50px;
+    margin: 23px 5% 0;
+    background: #eee;
+}
+.calculate-result div{
+    height: 100%;
+}
+.calculate-result p{
+    color: #f47249;
+    font-size: 13px;
+    text-align: center;
+}
+.calculate-result>div{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.calculate-result>div>div{
+    display: inline-block;
+}
+.calculate-result div .icon-container{
+    width: 30px;
+    position: relative;
+    padding-top:10px;
+}
+.calculate-result div .text-container{
+    width: 106px;
+    position: relative;
+}
+.calculate-result div .text-container p{
+    text-align: left;
+    display: block;
+    position: absolute;
+    top:19px
+}
+
+.calculate-result .left{
+    border-right: 1px solid #fff;
+}
+.calculate-result .left .icon-container i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("https://dn-acac.qbox.me/fince_icon_09_a.png") no-repeat;
+    background-size: auto 30px;
+}
+
+.calculate-result .right .icon-container i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("https://dn-acac.qbox.me/fince_icon_05_a.png") no-repeat;
+    background-size: auto 30px;
+}
+.calculate-result .right .text-container p{
+    top:22px
+}
+.calculate-result .right .text-container{
+    width: 90px;
+}
+
+/*附加价值*/
+.other-value{
+    width: 100%;
+    height: 100px;
+    margin-top: 25px;
+}
+.other-value textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #eee;
+    font-size: 12px;
+    padding: 10px 5%;
+    resize: none;
+}
+.other-value textarea:focus{
+    outline: none;
+}
+
+/*angelcrunch self investor send investment*/
+.self-form{
+    width: 100%;
+    height: 50px;
+    background: #eee;
+    padding:0 5%;
+    position: relative;
+    margin-top: 25px;
+}
+.self-form span{
+    margin: 0;
+    line-height: 50px;
+    float: left;
+    font-size: 14px;
+    color: #666;
+    display: inline-block;
+    position: relative;
+}
+.self-form i{
+    margin-left: 5px;
+    display: inline-block;
+    width: 5%;
+    line-height: 55px;
+    float: left;
+}
+.self-form input{
+    display: inline-block;
+    width: 78%;
+    float: right;
+    height: 100%;
+    background: #eee;
+    border: none;
+    font-size: 14px;
+    font-family: "PingHei","Lucida Grande","Lucida Sans Unicode","Helvetica","Arial","Verdana","sans-serif";
+}
+.self-form input:focus{
+    outline: none;
+}
+.addition-agreement .modules{
+    margin-top: 23px;
+}
+@media screen and (max-width: 360px) {
+    .value-info .percent .text-container .amount,
+    .value-info .before .text-container .amount{
+        font-size: 16px;
+        margin-top: 41px;
+    }
+}
